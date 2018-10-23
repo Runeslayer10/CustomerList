@@ -18,6 +18,7 @@ public class CustomerList {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        
         //variables section
         String name, address, city, province, postal, myLine, amount;
         int numCust = 0;
@@ -45,11 +46,11 @@ public class CustomerList {
             noError = false;
         
         // catching if user doesn't enter a integer value for number of customers
-        }catch(NumberFormatException nfe){
-        System.out.println("Please Enter a integer for the number of customers"
+            }catch(NumberFormatException nfe){
+                System.out.println("Please Enter a integer for the number of customers"
                 + " you'd like to add.");
-        System.out.println(nfe);
-        }
+                System.out.println(nfe);
+            }
         }
 
         //for loop for how many customers to enter into the text file
@@ -79,7 +80,8 @@ public class CustomerList {
             
             //this is if the user doesn/t input in postal code form
             }else{
-            postal = JOptionPane.showInputDialog("This is not a vaild postal code, please try again.");
+            postal = JOptionPane.showInputDialog("This is not a vaild postal code, please try again."
+                    + " (Remember no spaces!!)");
         }
         }
         
