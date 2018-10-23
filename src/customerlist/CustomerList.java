@@ -80,9 +80,9 @@ public class CustomerList {
             
             //this is if the user doesn/t input in postal code form
             }else{
-            postal = JOptionPane.showInputDialog("This is not a vaild postal code, please try again."
+                postal = JOptionPane.showInputDialog("This is not a vaild postal code, please try again."
                     + " (Remember no spaces!!)");
-        }
+            }
         }
         
         //this is writing into the file
